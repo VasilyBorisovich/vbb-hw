@@ -3,11 +3,11 @@ package com.vbb.bot;
 import java.io.File;
 import java.util.List;
 import lombok.extern.slf4j.Slf4j;
-import com.annimon.tgbotsmodule.BotHandler;
-import com.annimon.tgbotsmodule.BotModule;
-import com.annimon.tgbotsmodule.Runner;
-import com.annimon.tgbotsmodule.beans.Config;
-import com.annimon.tgbotsmodule.services.YamlConfigLoaderService;
+import com.vbb.bot.basebotmodule.BotHandler;
+import com.vbb.bot.basebotmodule.BotModule;
+import com.vbb.bot.basebotmodule.Runner;
+import com.vbb.bot.basebotmodule.beans.Config;
+import com.vbb.bot.basebotmodule.services.YamlConfigLoaderService;
 
 @Slf4j
 public class BotMain implements BotModule {

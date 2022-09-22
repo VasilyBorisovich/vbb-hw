@@ -1,12 +1,12 @@
 package com.vbb.bot;
 
-import com.annimon.tgbotsmodule.BotHandler;
-import com.annimon.tgbotsmodule.api.methods.Methods;
-import com.annimon.tgbotsmodule.api.methods.other.SendChatActionMethod;
-import com.annimon.tgbotsmodule.commands.CommandRegistry;
-import com.annimon.tgbotsmodule.commands.SimpleCommand;
-import com.annimon.tgbotsmodule.commands.authority.For;
-import com.annimon.tgbotsmodule.commands.authority.SimpleAuthority;
+import com.vbb.bot.basebotmodule.BotHandler;
+import com.vbb.bot.basebotmodule.api.methods.Methods;
+import com.vbb.bot.basebotmodule.api.methods.other.SendChatActionMethod;
+import com.vbb.bot.basebotmodule.commands.CommandRegistry;
+import com.vbb.bot.basebotmodule.commands.SimpleCommand;
+import com.vbb.bot.basebotmodule.commands.authority.For;
+import com.vbb.bot.basebotmodule.commands.authority.SimpleAuthority;
 import lombok.extern.slf4j.Slf4j;
 import org.jetbrains.annotations.NotNull;
 import org.telegram.telegrambots.meta.api.methods.ActionType;
