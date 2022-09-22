@@ -1,5 +1,6 @@
 package com.vbb.bot;
 
+import java.io.File;
 import java.util.List;
 import lombok.extern.slf4j.Slf4j;
 import com.annimon.tgbotsmodule.BotHandler;
@@ -23,8 +24,8 @@ public class BotMain implements BotModule {
 
     @Override
     public @org.jetbrains.annotations.NotNull BotHandler botHandler(@org.jetbrains.annotations.NotNull Config config) {
-        final var configLoader = new YamlConfigLoaderService();
-        final var configFile = configLoader.configFile("iotbot", config.getProfile());
+        final YamlConfigLoaderService configLoader = new YamlConfigLoaderService();
+        final File configFile = configLoader.configFileFromResource("iotbot", config.getProfile());
         final var botConfig = configLoader.loadFile(configFile, IotBotConfig.class);
         return new IotBotHandler(botConfig);
     }
