@@ -1,0 +1,17 @@
+version: '3'
+
+volumes:
+  static-content:
+
+services:
+  jrtb:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.win
+      args:
+        - NODE_ROOT=${NODE_ROOT}
+    environment:
+      - NODE_ROOT=${NODE_ROOT}
+    env_file:
+      - ./jrtb.env
+    restart: always
